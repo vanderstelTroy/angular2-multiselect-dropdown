@@ -222,7 +222,7 @@ export class AngularMultiSelect implements OnInit, ControlValueAccessor, OnChang
         }
         if (changes.loading) {
         }
-        if (this.settings.lazyLoading && this.virtualScroollInit && changes.data) {
+        if (this.settings && this.settings.lazyLoading && this.virtualScroollInit && changes.data) {
             this.virtualdata = changes.data.currentValue;
         }
     }
